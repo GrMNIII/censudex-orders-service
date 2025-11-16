@@ -1,0 +1,58 @@
+# *************************
+# IGNORAR DEPENDENCIAS Y BINARIOS .NET
+# *************************
+## Directorios de compilación y binarios
+[Bb]in/
+[Oo]bj/
+**/[Dd]ebug/
+**/[Rr]elease/
+
+## Paquetes NuGet (restaurados)
+**/packages/*
+# Directorios de caché y restauración de NuGet (Windows)
+# %userprofile%\.nuget\packages
+# %userprofile%\.nuget\artifacts
+
+## Archivos de caché
+.vs/
+
+# *************************
+# IGNORAR CONFIGURACIÓN Y DESARROLLO LOCAL
+# *************************
+## Configuración de Usuario de Visual Studio Code (VS Code)
+.vscode/
+
+## Archivos generados por VS Code (si los hay)
+*.code-workspace
+
+## Archivos de Configuración Local y Secreto
+# Archivos de configuración con información sensible (contraseñas, API Keys, etc.)
+appsettings*.Development.json
+appsettings*.Staging.json
+appsettings*.Production.json
+appsettings*.json.user
+appsettings*.user.json
+
+# Se excluye appsettings.json general, pero se excluyen las versiones específicas o de usuario
+# para evitar subir credenciales.
+
+# *************************
+# IGNORAR BASE DE DATOS Y SQL
+# *************************
+# Archivos de la base de datos local de SQL Server (si usaras MSSQL)
+*.mdf
+*.ldf
+*.sdf
+
+# Ignorar archivos generados por MySQL Workbench
+# (Si los guardas en la carpeta del proyecto)
+*.bak
+*.wbdata
+*.wbp
+
+# *************************
+# IGNORAR GENERADOS DE PRUEBAS Y OTROS
+# *************************
+# Archivos generados por NUnit, XUnit u otras herramientas de prueba
+TestResults/
+coverlet/
